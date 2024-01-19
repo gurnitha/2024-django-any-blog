@@ -151,6 +151,20 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 13. Refactor index template
+
+        modified:   README.md
+        new file:   templates/home/divider.html
+        new file:   templates/home/featured-posts.html
+        new file:   templates/home/gallery.html
+        new file:   templates/home/hero.html
+        new file:   templates/home/intro.html
+        new file:   templates/home/latest-posts.html
+        new file:   templates/home/newsletter.html
+        modified:   templates/index.html
+
+        Tested :)
+
 
 
 
