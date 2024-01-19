@@ -76,6 +76,27 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         Starting development server at http://127.0.0.1:8000/
         Quit the server with CTRL-BREAK.
 
+#### 7. Membuat Postgres db dan konek db dengan proyek
+
+        modified:   README.md
+        modified:   config/settings.py
+        
+        # DB: PostgreSQL
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': '2024-django-any-blog', 
+                'USER': 'postgres', 
+                'PASSWORD': 'pemogan148',
+                'HOST': 'localhost', 
+                'PORT': '5433',
+            }
+        }
+
+        Testing: Restart server 
+
+        :)
+
 
 
 
