@@ -33,6 +33,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         (venv31250) λ ls
         config/  manage.py*  README.md
 
+#### 4. Membuat apps django: apps/posts dan apps/marketing
+
+        E:\_WORKSPACE\2024\django\BLOG\2024-django-any-blog\src(main -> origin)
+        (venv31250) λ mkdir apps\posts
+        (venv31250) λ django-admin startapp posts apps\posts
+        (venv31250) λ mkdir apps\marketing
+        (venv31250) λ django-admin startapp marketing apps\marketing
+
 
 
 
