@@ -139,9 +139,17 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         new file:   templates/base.html
         modified:   templates/index.html 
 
+        Tested :) 
+
+#### 12. Refactor base templates
+
+        modified:   templates/base.html
+        new file:   templates/shared/footer.html
+        new file:   templates/shared/head.html
+        new file:   templates/shared/header.html
+        new file:   templates/shared/scripts.html
+
         Tested :)
-
-
 
 
 
