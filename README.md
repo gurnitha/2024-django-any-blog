@@ -165,6 +165,12 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 14. Adding page title
+
+        modified:   README.md
+        modified:   templates/base.html
+        modified:   templates/index.html 
+
 
 
 

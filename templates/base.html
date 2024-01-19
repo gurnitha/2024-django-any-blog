@@ -3,7 +3,7 @@
 <html>
   <head>
     {% include 'shared/head.html' %}
-    <title>Bootstrap Blog - B4 Template by Bootstrap Temple</title>
+    <title>Any Blog | {% block title %}{{block.super}}{% endblock title%}</title>
   </head>
   <body>
     <!-- Header -->
