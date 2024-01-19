@@ -110,8 +110,17 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 9. Create home page: templates, views and urls
 
+        modified:   README.md
+        new file:   apps/posts/urls.py
+        modified:   apps/posts/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/index.html
 
+        Note: Added bear html template
+ 
 
 
 
