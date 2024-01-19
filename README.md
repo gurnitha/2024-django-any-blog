@@ -133,6 +133,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 11. Create and use base template
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/index.html 
+
+        Tested :)
+
 
 
 
