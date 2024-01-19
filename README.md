@@ -15,8 +15,8 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         λ python -m venv venv31250
         λ venv31250\Scripts\activate.bat
         (venv31250) λ pip install django
-        
-		(venv31250) λ pip list
+
+                (venv31250) λ pip list
         Package  Version
         -------- -------
         asgiref  3.7.2
@@ -24,6 +24,17 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         pip      23.2.1
         sqlparse 0.4.4
         tzdata   2023.4
+
+#### 3. Membuat proyek django dengan nama 'config' di dalam folder src
+
+        E:\_WORKSPACE\2024\django\BLOG\2024-django-any-blog(main -> origin)
+        (venv31250) λ cd src\
+        (venv31250) λ django-admin startproject config .
+        (venv31250) λ ls
+        config/  manage.py*  README.md
+
+
+
 
 
 
