@@ -80,7 +80,7 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         modified:   README.md
         modified:   config/settings.py
-        
+
         # DB: PostgreSQL
         DATABASES = {
             'default': {
@@ -97,13 +97,18 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         :)
 
+#### 8. Melindungi sensitif file dengan membuat .env file
 
+        (venv31250) λ pip install django-environ
+        (venv31250) λ pip install python-env
+        (venv31250) λ pip install python-environ
+        (venv31250) λ pip install python-dotenv
 
+        new file:   .env.example
+        modified:   README.md
+        modified:   config/settings.py
 
-
-
-
-
+        Tested :)
 
 
 
