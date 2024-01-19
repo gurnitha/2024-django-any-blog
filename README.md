@@ -60,6 +60,22 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         new file:   apps/posts/views.py
         modified:   config/settings.py
 
+#### 6. Menjalankan development server
+
+        E:\_WORKSPACE\2024\django\BLOG\2024-django-any-blog\src(main -> origin)
+        (venv31250) λ python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        System check identified no issues (0 silenced).
+
+        You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+        Run 'python manage.py migrate' to apply them.
+        January 20, 2024 - 05:51:10
+        Django version 5.0.1, using settings 'config.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
 
 
 
