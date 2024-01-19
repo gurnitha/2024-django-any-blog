@@ -120,8 +120,18 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         new file:   templates/index.html
 
         Note: Added bear html template
- 
 
+#### 10. Adding and loading static files
+ 
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   static_in_env/css/custom.css
+        ..
+        new file:   static_in_env/vendor/popper.js/umd/popper.min.js
+        new file:   static_in_env/vendor/popper.js/umd/poppper.js.flow
+        modified:   templates/index.html
+
+        Tested :)
 
 
 
