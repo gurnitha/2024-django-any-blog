@@ -41,6 +41,25 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         (venv31250) λ mkdir apps\marketing
         (venv31250) λ django-admin startapp marketing apps\marketing
 
+#### 5. Install posts dan marketing pada config/settings.py
+
+        modified:   README.md
+        new file:   apps/marketing/__init__.py
+        new file:   apps/marketing/admin.py
+        new file:   apps/marketing/apps.py
+        new file:   apps/marketing/migrations/__init__.py
+        new file:   apps/marketing/models.py
+        new file:   apps/marketing/tests.py
+        new file:   apps/marketing/views.py
+        new file:   apps/posts/__init__.py
+        new file:   apps/posts/admin.py
+        new file:   apps/posts/apps.py
+        new file:   apps/posts/migrations/__init__.py
+        new file:   apps/posts/models.py
+        new file:   apps/posts/tests.py
+        new file:   apps/posts/views.py
+        modified:   config/settings.py
+
 
 
 
