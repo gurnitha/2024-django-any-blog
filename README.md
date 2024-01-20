@@ -183,6 +183,17 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 16. Refactor blog template
+
+        modified:   README.md
+        modified:   templates/blog.html
+        new file:   templates/blog/categories.html
+        new file:   templates/blog/latest-posts.html
+        new file:   templates/blog/pagination.html
+        new file:   templates/blog/posts.html
+        new file:   templates/blog/search.html
+        new file:   templates/blog/tags.html
+
 
 
 
