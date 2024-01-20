@@ -4,7 +4,7 @@
 from django.contrib import admin
 
 # Django locals
-from apps.posts.models import Author, Category, Post, Tag
+from apps.posts.models import Author, Category, Post, Tag, Gallery
 
 # PostAdmin class
 class PostAdmin(admin.ModelAdmin):
@@ -15,3 +15,4 @@ admin.site.register(Author)
 admin.site.register(Category)
 admin.site.register(Post, PostAdmin)
 admin.site.register(Tag)
+admin.site.register(Gallery)

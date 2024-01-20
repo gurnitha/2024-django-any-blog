@@ -15,7 +15,7 @@ class Author(models.Model):
 	# Author has OneToOne relationship with the User model
 	# An author is belong to a user
 	user 			= models.OneToOneField(User,on_delete=models.CASCADE)
-	profile_picture = models.ImageField(upload_to='uploads/profiles/')
+	profile_picture = models.ImageField()
 
 	class Meta:
 		verbose_name = 'Author'
@@ -63,7 +63,7 @@ class Post(models.Model):
 	# Post has ManyToOne relationship with Author.
 	# Many posts can belong to an author. 	
 	author 			= models.ForeignKey(Author, on_delete=models.CASCADE)
-	thumbnail 		= models.ImageField(upload_to='uploads/thumbnail/')
+	thumbnail 		= models.ImageField()
 	# Post has ManyToMany relationship with Category.
 	# A post can have many categories.
 	categories 		= models.ManyToManyField(Category)
@@ -83,3 +83,17 @@ class Post(models.Model):
 		return reverse('posts:post_single', kwargs={
 			'id':self.id 
 		})
+
+
+# Gallery images
+class Gallery(models.Model):
+	title = models.CharField(max_length=100, blank=True, null=True)
+	image = models.ImageField(upload_to='gallery/%Y/%m/%d')
+	timestamp 		= models.DateTimeField(auto_now_add=True)
+
+	class Meta:
+		verbose_name = 'Gallery'
+		verbose_name_plural = 'Galleries'
+
+	def __str__(self):
+		return self.title

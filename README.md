@@ -331,6 +331,22 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 26. Image Gallery: Create Gallery model, run migration, load on view method and display
+
+        modified:   README.md
+        modified:   apps/posts/admin.py
+        modified:   apps/posts/models.py
+        modified:   apps/posts/views.py
+        new file:   media/gallery/2024/01/20/gallery-1.jpg
+        new file:   media/gallery/2024/01/20/gallery-2.jpeg
+        new file:   media/gallery/2024/01/20/gallery-3.jpg
+        new file:   media/gallery/2024/01/20/gallery-4.jpg
+        modified:   templates/home/gallery.html
+
+        Tested :)
+
+
+
 
 
 
