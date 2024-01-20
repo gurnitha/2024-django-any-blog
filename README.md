@@ -255,8 +255,26 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 21. Create Author, Category, Tag and Post models
 
+        modified:   apps/posts/admin.py
+        new file:   apps/posts/migrations/0001_initial.py
+        new file:   apps/posts/migrations/0002_alter_author_profile_picture_alter_post_thumbnail.py
+        modified:   apps/posts/models.py
+        modified:   config/settings.py
+        new file:   media/uploads/profiles/ing.jpeg
+        new file:   media/uploads/thumbnail/featured-pic-1.jpeg
+        new file:   media/uploads/thumbnail/featured-pic-2.jpeg
+        new file:   media/uploads/thumbnail/featured-pic-3.jpeg
 
+        Note:
+
+        1. Register models to admin.py
+        2. Run migrations
+        3. Create superuser
+        4. Add some categories, tags, and posts
+
+        Tested :)
 
 
 
