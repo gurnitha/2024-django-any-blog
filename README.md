@@ -390,8 +390,21 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         modified:   apps/posts/views.py
         modified:   templates/posts/inc/pagination.html
 
-        Tested :)
+        Tested 
 
+#### 32. Adding basics search functionalities
+
+        modified:   README.md
+        modified:   apps/posts/urls.py
+        modified:   apps/posts/views.py
+        new file:   templates/search_results.html
+        modified:   templates/shared/aside-search.html
+
+        Note:
+
+        It works, but not yet perfect.
+
+        Tested :)
 
 
 

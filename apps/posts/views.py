@@ -2,7 +2,7 @@
 
 # Django modules
 from django.shortcuts import render
-from django.db.models import Count
+from django.db.models import Count, Q
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Locals
@@ -10,6 +10,28 @@ from apps.posts.models import Author, Category, Post, Tag, Gallery
 from apps.marketing.models import Signup
 
 # Create your views here.
+
+def search(request):
+
+	# Load all post objects
+    queryset = Post.objects.all()
+    # Get and query all post objects
+    query = request.GET.get('q')
+
+    # If there is query, filter them
+    # by title or overview and if there are
+    # the same objects showed by title and overview,
+    # use distinct to distinguished them.
+    if query:
+        queryset = queryset.filter(
+            Q(title__icontains=query) |
+            Q(overview__icontains=query)
+        ).distinct()
+
+    context = {
+        'queryset': queryset
+    }
+    return render(request, 'search_results.html', context)
 
 def index(request):
 
