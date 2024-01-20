@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Locals
 from apps.posts.models import Author, Category, Post, Tag
+from apps.marketing.models import Signup
 
 # Create your views here.
 
@@ -17,8 +18,19 @@ def index(request):
 	latest_posts = Post.objects.order_by('-timestamp')[0:3]
 
 	# Testing
-	print(featured_posts)
-	
+	# print(featured_posts)
+
+	# Subscribe Newsletter (without security)
+	if request.method == "POST":
+		# Get the email
+		email = request.POST["email"]
+		# Use the signup method
+		new_signup = Signup()
+		# Signup with email
+		new_signup.email = email
+		# save its email
+		new_signup.save()
+
 	context = {
 		'object_list': featured_posts,
 		'latest_posts': latest_posts

@@ -311,6 +311,27 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 25. Create Singup model, and add functionality to Subscribe Newsletter and testing
+
+        modified:   README.md
+        #1 create Signup model
+        modified:   apps/marketing/models.py 
+
+        #2 register the Signup model
+        modified:   apps/marketing/admin.py 
+
+        #3 migrations
+        new file:   apps/marketing/migrations/0001_initial.py 
+
+        #4 define signup logic
+        modified:   apps/posts/views.py 
+
+        #5 define the form
+        modified:   templates/home/newsletter.html 
+
+        Tested :)
+
+
 
 
 
