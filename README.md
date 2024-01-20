@@ -208,6 +208,24 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         Tested :)
 
 
+#### 18. Moving aside files from blog folder to shared folder
+
+        modified:   apps/posts/urls.py
+        modified:   apps/posts/views.py
+        renamed:    templates/blog.html -> templates/posts-list.html
+        renamed:    templates/blog/categories.html -> templates/posts/categories.html
+        renamed:    templates/blog/pagination.html -> templates/posts/pagination.html
+        renamed:    templates/blog/posts.html -> templates/posts/posts.html
+        modified:   templates/shared/header.html
+
+        Note: 
+
+        In navbar there are Blog and Post menus.
+        They are similar, should be only one, either Blog or Post
+
+        Tested :)
+
+
 
 
 

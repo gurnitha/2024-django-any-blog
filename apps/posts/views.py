@@ -1,6 +1,3 @@
-# apps/posts/views.py
-
-# Django modules
 from django.shortcuts import render
 
 # Create your views here.
@@ -8,5 +5,6 @@ from django.shortcuts import render
 def index(request):
 	return render(request, 'index.html')
 
-def blog(request):
-	return render(request, 'blog.html')
+
+def posts_list(request):
+	return render(request, 'posts-list.html')

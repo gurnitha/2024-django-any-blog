@@ -10,5 +10,5 @@ app_name = 'posts'
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('blog/', views.blog, name='blog'),
+    path('posts/', views.posts_list, name='posts_list'),
 ]
