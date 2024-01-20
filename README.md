@@ -225,6 +225,19 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 19. Create single post page: template, views, urls and links
+
+        modified:   README.md
+        modified:   apps/posts/urls.py
+        modified:   apps/posts/views.py
+        modified:   templates/home/featured-posts.html
+        new file:   templates/post-single.html
+        modified:   templates/posts/posts.html
+        modified:   templates/shared/header.html
+
+        Tested :)
+
+
 
 
 

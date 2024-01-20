@@ -8,3 +8,7 @@ def index(request):
 
 def posts_list(request):
 	return render(request, 'posts-list.html')
+
+
+def post_single(request):
+	return render(request, 'post-single.html')
