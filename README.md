@@ -345,6 +345,18 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 27. Load and display all posts to posts-list page
+
+        modified:   apps/posts/views.py
+        modified:   templates/home/featured-posts.html
+        renamed:    templates/posts/categories.html -> templates/posts/inc/categories.html
+        renamed:    templates/posts/pagination.html -> templates/posts/inc/pagination.html
+        new file:   templates/posts/inc/posts.html
+        new file:   templates/posts/post-single.html
+        new file:   templates/posts/posts-list.html
+        deleted:    templates/posts/posts.html
+
+        Tested :)
 
 
 

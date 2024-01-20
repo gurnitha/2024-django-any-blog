@@ -35,8 +35,8 @@ def index(request):
 	images_list = Gallery.objects.order_by('-timestamp')[0:4]
 
 	context = {
-		'object_list': featured_posts,
-		'object_list': latest_posts,
+		'featured_posts': featured_posts,
+		'latest_posts': latest_posts,
 		'images_list': images_list
 	}
 
@@ -44,7 +44,14 @@ def index(request):
 
 
 def posts_list(request):
-	return render(request, 'posts-list.html')
+
+	# Grab all posts
+	posts_list = Post.objects.all()
+
+	context = {
+		'posts_list':posts_list
+	} 
+	return render(request, 'posts/posts-list.html', context)
 
 
 def post_single(request):

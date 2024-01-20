@@ -1,0 +1,47 @@
+<!-- templates/posts-list.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blog{% endblock title%}
+
+{% block content %}
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Latest Posts and Pagination-->
+        <main class="posts-listing col-lg-8"> 
+          <div class="container">
+
+            <!-- Posts -->
+            {% include 'posts/inc/posts.html' %}
+
+            <!-- Pagination -->
+            {% include 'posts/inc/pagination.html' %}
+
+          </div>
+        </main>
+        <!-- END Latest Posts and Pagination -->
+
+        <!-- Aside -->
+        <aside class="col-lg-4">
+
+          <!-- Search-->
+          {% include 'shared/aside-search.html' %}
+
+          <!-- Latest posts-->
+          {% include 'shared/aside-latest-posts.html' %}
+
+          <!-- Categories-->
+          {% include 'shared/aside-categories.html' %}
+
+          <!-- Tags -->
+          {% include 'shared/aside-tags.html' %}
+
+        </aside>
+        <!-- END Aside -->
+
+      </div>
+    </div>
+
+{% endblock content %}
