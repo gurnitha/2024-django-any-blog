@@ -237,7 +237,23 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 20. Re-setting up STATIC and MEDIA files
 
+        modified:   apps/posts/admin.py
+        modified:   apps/posts/models.py
+        renamed:    static_in_env/css/custom.css -> config/static/css/custom.css
+        renamed:    static_in_env/css/fontastic.css -> config/static/css/fontastic.css
+        ...
+        renamed:    static_in_env/vendor/popper.js/umd/poppper.js.flow -> config/static/vendor/popper.js/umd/poppper.js.flow
+        modified:   config/urls.py
+
+        Note:
+
+        1. Rename static_in_env to static
+        2. Moved it to config folder
+        3. Re-define path for static and media files
+
+        Tested :)
 
 
 
