@@ -276,6 +276,23 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 22. Making the slug field in post table prepopulated_fields
+
+        modified:   README.md
+        modified:   apps/posts/admin.py
+        new file:   media/uploads/thumbnail/blog-1.jpg
+        new file:   media/uploads/thumbnail/blog-2.jpg
+        new file:   media/uploads/thumbnail/blog-3.jpg
+        new file:   media/uploads/thumbnail/blog-post-1.jpeg
+        new file:   media/uploads/thumbnail/blog-post-2.jpg
+        new file:   media/uploads/thumbnail/blog-post-3.jpeg
+        new file:   media/uploads/thumbnail/blog-post-4.jpeg
+
+        Note: Added some more posts
+
+        Tested :)
+
+
 
 
 
