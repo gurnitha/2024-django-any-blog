@@ -292,6 +292,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 23. Load and display featured posts
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/home/featured-posts.html
+
+        Tested :)
+
 
 
 
