@@ -194,6 +194,20 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         new file:   templates/blog/search.html
         new file:   templates/blog/tags.html
 
+        Tested :)
+
+#### 17. Moving aside files from blog folder to shared folder
+
+        modified:   README.md
+        modified:   templates/blog.html
+        new file:   templates/shared/aside-categories.html
+        renamed:    templates/blog/latest-posts.html -> templates/shared/aside-latest-posts.html
+        renamed:    templates/blog/search.html -> templates/shared/aside-search.html
+        renamed:    templates/blog/tags.html -> templates/shared/aside-tags.html
+
+        Tested :)
+
+
 
 
 
