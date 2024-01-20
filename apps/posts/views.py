@@ -48,8 +48,12 @@ def posts_list(request):
 	# Grab all posts
 	posts_list = Post.objects.all()
 
+	# Grab 3 posts based on LIFO
+	posts_latest = Post.objects.order_by('-timestamp')[0:3]
+
 	context = {
-		'posts_list':posts_list
+		'posts_list':posts_list,
+		'posts_latest':posts_latest
 	} 
 	return render(request, 'posts/posts-list.html', context)
 

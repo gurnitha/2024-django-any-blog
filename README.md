@@ -358,6 +358,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 28. Load and display latest posts on aside of the posts-list page
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/shared/aside-latest-posts.html 
+
+        Tested :)
+
 
 
 
