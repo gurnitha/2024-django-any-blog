@@ -300,6 +300,17 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 24. Load and display latest posts
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/home/latest-posts.html
+
+        # Grab 3 latest posts and render them based on LIFO
+        latest_posts = Post.objects.order_by('-timestamp')[0:3]
+
+        Tested :)
+
 
 
 

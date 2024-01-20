@@ -7,56 +7,28 @@
         </header>
         <div class="row">
 
+          {% for object in latest_posts %}
+          <!-- Latest post -->
           <div class="post col-md-4">
             <div class="post-thumbnail">
               <a href="post.html">
-                <img src="{% static 'img/blog-1.jpg' %}" 
+                <img src="{{ object.thumbnail.url }}" 
                   alt="..." class="img-fluid">
               </a>
             </div>
             <div class="post-details">
               <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Business</a></div>
+                <div class="date">{{ object.timestamp }}</div>
+                <div class="category">
+                  <a href="#">{{ object.category }}</a>
+                </div>
               </div><a href="post.html">
-                <h3 class="h4">Ways to remember your important ideas</h3></a>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <h3 class="h4">{{ object.title|title }}</h3></a>
+              <p class="text-muted">{{ object.overview|slice:"200"|title }}</p>
             </div>
           </div>
-
-          <div class="post col-md-4">
-            <div class="post-thumbnail">
-              <a href="post.html">
-                <img src="{% static 'img/blog-2.jpg' %}" 
-                alt="..." class="img-fluid">
-              </a>
-            </div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Technology</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">Diversity in Engineering: Effect on Questions</h3></a>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-
-          <div class="post col-md-4">
-            <div class="post-thumbnail">
-              <a href="post.html">
-                <img src="{% static 'img/blog-3.jpg' %}" 
-                alt="..." class="img-fluid">
-              </a>
-            </div>
-            <div class="post-details">
-              <div class="post-meta d-flex justify-content-between">
-                <div class="date">20 May | 2016</div>
-                <div class="category"><a href="#">Financial</a></div>
-              </div><a href="post.html">
-                <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3></a>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
+          <!-- END Latest post -->
+          {% endfor %}
         </div>
       </div>
     </section>

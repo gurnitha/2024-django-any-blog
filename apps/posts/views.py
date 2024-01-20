@@ -13,11 +13,15 @@ def index(request):
 	# SELECT * FROM post WHERE post = featured
 	featured_posts = Post.objects.filter(featured=True)
 
+	# Grab 3 latest posts and render them based on LIFO
+	latest_posts = Post.objects.order_by('-timestamp')[0:3]
+
 	# Testing
 	print(featured_posts)
 	
 	context = {
-		'object_list': featured_posts
+		'object_list': featured_posts,
+		'latest_posts': latest_posts
 	}
 
 	return render(request, 'index.html', context)
