@@ -384,6 +384,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 31. Pagination 
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/posts/inc/pagination.html
+
+        Tested :)
+
 
 
 

@@ -3,6 +3,7 @@
 # Django modules
 from django.shortcuts import render
 from django.db.models import Count
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Locals
 from apps.posts.models import Author, Category, Post, Tag, Gallery
@@ -69,11 +70,36 @@ def posts_list(request):
 	# Count the tag
 	tag_count = get_tag_count()
 
+	# Pagination
+	# Set number of post to view per page
+	paginator = Paginator(posts_list, 3)
+	# Page request pariable
+	# -> 127.0.0.1:8000/blog/?page=3	
+	page_request_var = 'page' # <-- page=3
+	page = request.GET.get(page_request_var)  # <-- page=3
+	# Do some check
+	try:
+		paginated_queryset = paginator.page(page)
+	# if request was not integer: 
+	# --> 127.0.0.1:8000/blog/?page=fdfkdfkdfk
+	# then return to page 1 or home page		
+	except PageNotAnInteger: 
+		paginated_queryset = paginator.page(1)
+	# if request was empty page: 
+	# --> 127.0.0.1:8000/blog/?page=
+	# then return number of pages in queryset
+	except EmptyPage:
+		paginated_queryset = paginator.page(paginator.num_pages)
+
 	context = {
-		'posts_list':posts_list,
+		# 'posts_list':posts_list, # see line 102 ---> 'posts_list':paginated_queryset,
 		'posts_latest':posts_latest,
 		'category_count':category_count,
-		'tag_count':tag_count
+		'tag_count':tag_count,
+
+		# Pagination
+		'posts_list':paginated_queryset,
+		'page_request_var':page_request_var,
 	} 
 	
 	return render(request, 'posts/posts-list.html', context)
