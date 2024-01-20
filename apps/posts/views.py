@@ -2,6 +2,7 @@
 
 # Django modules
 from django.shortcuts import render
+from django.db.models import Count
 
 # Locals
 from apps.posts.models import Author, Category, Post, Tag, Gallery
@@ -43,6 +44,17 @@ def index(request):
 	return render(request, 'index.html', context)
 
 
+# Category count view
+def get_category_count():
+	queryset = Post.objects.values('categories__title').annotate(Count('categories__title'))
+	return queryset
+
+# Tag count view
+def get_tag_count():
+	queryset = Post.objects.values('tags__title').annotate(Count('tags__title'))
+	return queryset
+
+
 def posts_list(request):
 
 	# Grab all posts
@@ -51,10 +63,19 @@ def posts_list(request):
 	# Grab 3 posts based on LIFO
 	posts_latest = Post.objects.order_by('-timestamp')[0:3]
 
+	# Count the category
+	category_count = get_category_count()
+
+	# Count the tag
+	tag_count = get_tag_count()
+
 	context = {
 		'posts_list':posts_list,
-		'posts_latest':posts_latest
+		'posts_latest':posts_latest,
+		'category_count':category_count,
+		'tag_count':tag_count
 	} 
+	
 	return render(request, 'posts/posts-list.html', context)
 
 

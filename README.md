@@ -364,7 +364,26 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
         modified:   apps/posts/views.py
         modified:   templates/shared/aside-latest-posts.html 
 
+        Tested :) 
+
+
+#### 29. Create get_category_count view, Load, Count and display them
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/shared/aside-categories.html
+
         Tested :)
+
+#### 30. Create get_tag_count view, Load, Count and display them
+
+        modified:   README.md
+        modified:   apps/posts/views.py
+        modified:   templates/shared/aside-categories.html
+        modified:   templates/shared/aside-tags.html
+
+        Tested :)
+
 
 
 
