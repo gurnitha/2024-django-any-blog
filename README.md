@@ -422,6 +422,14 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         I forgot about what am I doing in this part ...:)
 
+#### 34. House keeping
+
+        (venv31250) λ pip install django-tinymce
+        modified:   README.md
+        
+        Note: In poin no. 33, installed and setup tinymce editor
+
+
 
 
 
