@@ -1,10 +1,10 @@
 # apps/posts/models.py
 
-# Django modules
+# Django modules and third parties
 from django.db import models
 from django.contrib.auth import get_user_model
 from django.urls import reverse
-
+from tinymce.models import HTMLField
 
 # Define User
 User = get_user_model()
@@ -56,8 +56,10 @@ class Tag(models.Model):
 class Post(models.Model):
 	title 			= models.CharField(max_length=100)
 	slug 			= models.SlugField(max_length=250)
-	overview 		= models.TextField()
+	# overview 		= models.TextField()
+	overview 		= HTMLField()
 	timestamp 		= models.DateTimeField(auto_now_add=True)
+	content 		= HTMLField()
 	comment_count 	= models.IntegerField(default=0)
 	view_count 		= models.IntegerField(default=0)
 	# Post has ManyToOne relationship with Author.

@@ -20,7 +20,7 @@
                     </div>
                   </div><a href="{% url 'posts:post_single' %}">
                     <h3 class="h4">{{ object.title|title }}</h3></a>
-                  <p class="text-muted">{{ object.overview|slice:"200"}}</p>
+                  <p class="text-muted">{{ object.overview|slice:"200"|striptags}}</p>
                   <footer class="post-footer d-flex align-items-center">
                     <a href="#" class="author d-flex align-items-center flex-wrap">
                       <div class="avatar">

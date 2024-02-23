@@ -406,7 +406,21 @@ Ytb: https://www.youtube.com/watch?v=HWg3zXWwre8
 
         Tested :)
 
+#### 33. What is this?
 
+        new file:   apps/posts/migrations/0003_gallery_alter_author_profile_picture_and_more.py
+        new file:   apps/posts/migrations/0004_post_content.py
+        new file:   apps/posts/migrations/0005_alter_post_overview.py
+        modified:   apps/posts/models.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   media/image_750x_65708024a2adb.webp
+        new file:   media/image_750x_65708024a2adb_tqV98EV.webp
+        modified:   templates/posts/inc/posts.html
+
+        NOTE:
+
+        I forgot about what am I doing in this part ...:)
 
 
 
